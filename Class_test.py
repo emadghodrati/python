@@ -14,11 +14,12 @@ class Person:
               format(self.name,self.age))
     
     def __lt__(self,other):
-        return self.name < other.name
+        return self.age < other.age
 
 
 p1 = [Person("John", 36),
-      Person("Bob",25)]
+      Person("Bob",25),
+      Person("Ted",54)]
 p1[0].age = 40
 
 p1.sort()
